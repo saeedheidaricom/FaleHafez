@@ -1,70 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        فال حافظ آنلاین
-    </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فال حافظ آنلاین</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<div class="quote-container" id="quote-container">
-    <div class="description">
+  <body>
+    <div class="quote-container" id="quote-container">
+      <div class="description">
         <p>ای حافظ شیرازی، تو کاشف هر رازی</p>
         <p>ما طالب یک فالیم، بر ما بنما رازی</p>
-    </div>
-    <!--    Buttons-->
-    <div class="button-container">
-        <button class="share-button" id="share" title="Share This!">
-            <i class="fa fa-copy"></i>
-        </button>
+      </div>
+      <!--    Buttons-->
+      <div class="button-container">
         <button class="fal-button" id="new-fal">
-            <i class="fa fa-dove"></i>
-            فال جدید
+          فال جدید
+          <i class="fa fa-dove"></i>
         </button>
-    </div>
-    <!--  Quote  -->
-    <div class="poem-title">
-        <span id="title"></span>
-        <i class="fa fa-pen-nib" id="quote-icon"></i>
-    </div>
-    <div class="poem-text">
-        <span id="poem"></span>
-    </div>
-    <!--    Author-->
-    <div class="quote-author">
-        <span id="author"></span>
-    </div>
-
-    <!--    Players -->
-    <div class="container-audio">
+        <button class="share-button" id="share" title="Share This!">
+          کپی
+          <i class="fa fa-copy"></i>
+        </button>
+      </div>
+      <!--  Quote  -->
+      <div class="loader" id="loader">Loading...</div>
+      <div class="poem-content">
+        <div class="poem-title">
+          <i class="fa fa-pen-nib" id="quote-icon"></i>
+          <span id="title"></span>
+        </div>
+        <div class="poem-text">
+          <span id="poem"></span>
+        </div>
+      </div>
+      <!--    Author-->
+      
+      <!--    Players -->
+      <div class="container-audio">
         <h3>خوانش‌ها</h3>
         <span id="audioArtist"></span>
         <audio controls loop id="mp3Url">
-            مرورگر شما تگ صوتی را پشتیبانی نمی کند
+          مرورگر شما تگ صوتی را پشتیبانی نمی کند
         </audio>
         <span id="audioArtist1"></span>
         <audio controls loop id="mp3Url1">
-            مرورگر شما تگ صوتی را پشتیبانی نمی کند
+          مرورگر شما تگ صوتی را پشتیبانی نمی کند
         </audio>
         <span id="audioArtist2"></span>
         <audio controls loop id="mp3Url2">
-            مرورگر شما تگ صوتی را پشتیبانی نمی کند
+          مرورگر شما تگ صوتی را پشتیبانی نمی کند
         </audio>
+      </div>
+      <div class="footer">
+        <a
+          href="https://saeedheidari.com"
+          target="_blank"
+          title="Designed by Saeed Heidari"
+          >Saeed Heidari سعید حیدری</a
+        >
+      </div>
     </div>
-</div>
-<div class="loader" id="loader">
-    <div class="square-holder">
-        <div class="square"></div>
-    </div>
-</div>
-<div>
-    <a href="https://ganjoor"
-</div>
-<!-- Script -->
-<script src="script.js"></script>
-</body>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
