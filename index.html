@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quote-container" id="quote-container">
+    <div class="description">
+        <p>ای حافظ شیرازی، تو کاشف هر رازی</p>
+        <p>ما طالب یک فالیم، بر ما بنما رازی</p>
+    </div>
+    <!--    Buttons-->
+    <div class="button-container">
+        <button class="share-button" id="share" title="Share This!">
+            <i class="fa fa-copy"></i>
+        </button>
+        <button class="fal-button" id="new-fal">
+            <i class="fa fa-dove"></i>
+            فال جدید
+        </button>
+    </div>
+    <!--  Quote  -->
+    <div class="poem-title">
+        <span id="title"></span>
+        <i class="fa fa-pen-nib" id="quote-icon"></i>
+    </div>
+    <div class="poem-text">
+        <span id="poem"></span>
+    </div>
+    <!--    Author-->
+    <div class="quote-author">
+        <span id="author"></span>
+    </div>
+
+    <!--    Players -->
+    <div class="container-audio">
+        <h3>خوانش‌ها</h3>
+        <span id="audioArtist"></span>
+        <audio controls loop id="mp3Url">
+            Your browser does not Support the audio Tag
+        </audio>
+        <span id="audioArtist1"></span>
+        <audio controls loop id="mp3Url1">
+            Your browser does not Support the audio Tag
+        </audio>
+        <span id="audioArtist2"></span>
+        <audio controls loop id="mp3Url2">
+            Your browser does not Support the audio Tag
+        </audio>
+    </div>
+</div>
+<div class="loader" id="loader">
+    <div class="square-holder">
+        <div class="square"></div>
+    </div>
+</div>
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
