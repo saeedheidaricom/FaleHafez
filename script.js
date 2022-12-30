@@ -1,7 +1,7 @@
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('poem');
 const authorText = document.getElementById('author');
-const twitterBtn = document.getElementById('share');
+const shareBtn = document.getElementById('share');
 const newQuoteBtn = document.getElementById('new-fal');
 const loader = document.getElementById('loader');
 const title = document.getElementById('title');
@@ -55,14 +55,14 @@ async function getQuotes() {
 }
 
 // Tweet Quote
-function tweetQuote() {
+function sharePoem() {
     `${navigator.clipboard.writeText(quoteText.textContent + "\n saeedhedari.com")}`
 
 }
 
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuotes);
-twitterBtn.addEventListener('click', tweetQuote);
+shareBtn.addEventListener('click', sharePoem);
 
 // On Load
 getQuotes();
